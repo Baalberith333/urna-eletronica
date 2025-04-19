@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="style.css" />    
+</head>
+<body>
+  <div class="urna">
+    <div class="tela-container">
+      <img src="imagens/brasao.jpg"  id="logo"  class="logo" alt="Brasão" />
+      <div class="tela" id="tela">Digite o número do candidato:</div>
+      <div class="info-candidato" id="info-candidato"></div>
+      <div class="mensagem" id="mensagem"></div>
+    </div>
+
+    <div class="teclado-container">
+      <div class="teclado">
+        <button onclick="tecla(1)">1</button>
+        <button onclick="tecla(2)">2</button>
+        <button onclick="tecla(3)">3</button>
+        <button onclick="tecla(4)">4</button>
+        <button onclick="tecla(5)">5</button>
+        <button onclick="tecla(6)">6</button>
+        <button onclick="tecla(7)">7</button>
+        <button onclick="tecla(8)">8</button>
+        <button onclick="tecla(9)">9</button>
+        <div></div>
+        <button onclick="tecla(0)">0</button>
+        <div></div>
+      </div>
+      <div class="acoes">
+        <button class="btn-branco" onclick="branco()">BRANCO</button>
+        <button class="btn-corrige" onclick="corrige()">CORRIGE</button>
+        <button class="btn-confirma" onclick="confirma()">CONFIRMA</button>
+      </div>
+    </div>
+</div>
+<script src="script.js"></script>
+<audio id="som-plim" src="audio/plim.mp3" preload="auto"></audio>
+</body>
+</html>
